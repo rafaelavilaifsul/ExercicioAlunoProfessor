@@ -9,19 +9,22 @@ public class Main {
 
         System.out.print("Digite o nome do aluno: ");
         String nome = teclado.nextLine();
+        System.out.print("Digite a data de nascimento: ");
+        String dataNascimento = teclado.nextLine();
         System.out.print("Digite a turma desse aluno: ");
         String turma = teclado.nextLine();
-        Aluno a = new Aluno(nome, turma);
+        Aluno a = new Aluno(nome, dataNascimento, turma);
 
-        System.out.print("Digite o nome do professor: ");
+        System.out.print("\nDigite o nome do professor: ");
         nome = teclado.nextLine();
+        System.out.print("Digite a data de nascimento: ");
+        dataNascimento = teclado.nextLine();
         System.out.print("Digite a área de atuação: ");
         String area = teclado.nextLine();
-        Professor p = new Professor(nome, area);
+        Professor p = new Professor(nome, dataNascimento, area);
         
-        System.out.println("O aluno " + a.getNome()
-            + " da turma " + a.getTurma()
-            + " tem aula de " + p.getArea()
-            + " com o Prof. " + p.getNome());
+        System.out.println();
+        System.out.println(a);
+        System.out.println(p);
     }
 }
