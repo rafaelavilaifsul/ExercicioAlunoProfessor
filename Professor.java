@@ -1,17 +1,11 @@
-class Professor {
+class Professor extends Pessoa {
     // atributos
-    private String nome;
     private String area;
 
     // construtor
     public Professor(String umNome, String umaArea) {
-        this.nome = umNome;
+        super(umNome);
         this.area = umaArea;
-    }
-
-    // retorna o nome do professor
-    public String getNome() {
-        return this.nome;
     }
 
     // retorna a area do professor
